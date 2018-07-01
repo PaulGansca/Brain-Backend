@@ -1,0 +1,21 @@
+{
+  "name": "brain-api",
+  "version": "1.0.0",
+  "description": "Back-end for the image recognition project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/PaulGansca/Brain-Backend.git"
+  },
+  "author": "Paul Mihai Gansca",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  }
+}
