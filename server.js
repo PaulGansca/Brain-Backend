@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
-const DATABASEPASSWORD = require('../imagerecognitionbrain/src/apiKeys') || process.env.DATABASEPASSWORD;
+const DATABASEPASSWORD = process.env.DATABASEPASSWORD;
 const knex = require("knex");
 
 const register = require("./controllers/register")
