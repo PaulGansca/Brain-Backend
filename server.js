@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
-const databasepassword = require('../imagerecognitionbrain/src/apiKeys');
+const DATABASEPASSWORD = require('../imagerecognitionbrain/src/apiKeys') || process.env.DATABASEPASSWORD;
 const knex = require("knex");
 
 const register = require("./controllers/register")
@@ -16,7 +16,7 @@ const db = knex({
     connection: {
       host : '127.0.0.1',
       user : 'paulgansca',
-      password : "test",
+      password : DATABASEPASSWORD,
       database : 'smart-brain'
     }
 });
