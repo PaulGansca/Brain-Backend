@@ -1,5 +1,5 @@
 const Clarifai = require('clarifai');
-const apiConfig = require('../../imagerecognitionbrain/src/apiKeys');
+const apiConfig = require('../../imagerecognitionbrain/src/apiKeys') || process.env.apiKey;
 
 const app = new Clarifai.App({
   apiKey: apiConfig.facerecognition
